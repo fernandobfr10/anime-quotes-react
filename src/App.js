@@ -25,7 +25,8 @@ function App () {
       <Quote quote={quote}/>
       <button onClick={getQuote}>Generate Quote</button>
       <footer>
-        Created by Fernando Junior
+        <p>Created by Fernando Junior</p>
+        <a href="https://github.com/inando85/anime-quotes-react">Github Project</a>
       </footer>
     </div>
   )
