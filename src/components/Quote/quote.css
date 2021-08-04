@@ -1,0 +1,71 @@
+.quote {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  min-height: 200px;
+  background-color: #131A26;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote__description {
+  color: #EEE;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.quote__description::after,
+.quote__description::before {
+  content: '"';
+  font-size: 18px;
+}
+
+.quote__description::before {
+  margin-right: 5px;
+}
+
+.quote__description::after {
+  margin-left: 5px;
+}
+
+.quote__author {
+  width: auto;
+  min-width: 130px;
+  height: 40px;
+  color: #EEE;
+  background-color: #8A4FFF;
+  position: absolute;
+  left: -12px;
+  top: -20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.quote__anime {
+  width: auto;
+  min-width: 130px;
+  height: 40px;
+  position: absolute;
+  bottom: -20px;
+  right: -12px;
+  background-color: #32CBFF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
