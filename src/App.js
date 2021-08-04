@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import Quote from './components/Quote'
 
+import Loader from "react-js-loader"
+
 import './App.css'
 
 function App () {
-  const [quote, setQuote] = useState({})
+  const [quote, setQuote] = useState(null)
 
   function getQuote () {
     const url = 'https://animechan.vercel.app/api/random'
@@ -22,7 +24,11 @@ function App () {
 
   return (
     <div className="app">
-      <Quote quote={quote}/>
+      {
+        quote === null
+          ? <Loader type="spinner-default" bgColor={"#131A26"} size={60} />
+          : <Quote quote={quote}/> 
+      }
       <button onClick={getQuote}>Generate Quote</button>
       <footer>
         <p>Created by Fernando Junior</p>
